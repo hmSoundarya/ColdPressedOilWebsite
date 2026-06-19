@@ -1,0 +1,1448 @@
+/* ===========================================
+   GLOBAL STYLES
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8faf8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================================
+   TOP BAR
+=========================================== */
+
+.top-bar{
+    background:#1b5e20;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 8%;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+header{
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo i{
+
+    font-size:40px;
+
+    color:#2e7d32;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+    color:#1b5e20;
+
+}
+
+.logo p{
+
+    font-size:13px;
+
+    color:#666;
+
+    letter-spacing:1px;
+
+}
+
+/* ===========================================
+   NAVIGATION
+=========================================== */
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav ul li a{
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    color:#333;
+
+}
+
+nav ul li a:hover{
+
+    color:#2e7d32;
+
+}
+
+/* Header Icons */
+
+.header-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.header-icons a{
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.header-icons a:hover{
+
+    color:#2e7d32;
+
+}
+
+.header-icons i{
+
+    margin-right:6px;
+
+}
+
+/* Cart Badge */
+
+#cart-count{
+
+    background:#ff9800;
+
+    color:white;
+
+    padding:3px 8px;
+
+    border-radius:20px;
+
+    margin-left:6px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================================
+   HERO SECTION
+=========================================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:80px 8%;
+
+    background:linear-gradient(to right,#f1fff2,#ffffff);
+
+}
+
+/* Left Content */
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.tag{
+
+    background:#dcedc8;
+
+    color:#2e7d32;
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    color:#1b5e20;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:19px;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+/* Hero Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    background:#2e7d32;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#1b5e20;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+    border:2px solid #2e7d32;
+
+    color:#2e7d32;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+    background:#2e7d32;
+
+    color:white;
+
+}
+
+/* Hero Features */
+
+.features{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.features div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.features i{
+
+    font-size:34px;
+
+    color:#2e7d32;
+
+    margin-bottom:8px;
+
+}
+
+.features p{
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+/* Right Image */
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+header{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.features{
+
+justify-content:center;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.top-bar{
+
+flex-direction:column;
+
+gap:8px;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+nav ul{
+
+gap:15px;
+
+}
+
+.header-icons{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.hero{
+
+padding:50px 20px;
+
+}
+
+}
+/* ===========================================
+   PRODUCTS SECTION
+=========================================== */
+
+.products{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.products h2{
+    text-align:center;
+    font-size:40px;
+    color:#1b5e20;
+    margin-bottom:15px;
+}
+
+.products>p{
+    text-align:center;
+    color:#666;
+    margin-bottom:50px;
+    font-size:18px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+    padding:25px;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.product-card img{
+    width:220px;
+    height:220px;
+    object-fit:contain;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.product-card h3{
+    color:#1b5e20;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.product-card h4{
+    color:#ff6f00;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.product-card select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+.product-card button{
+    width:100%;
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-card button:hover{
+    background:#1b5e20;
+}
+
+/* ===========================================
+   WHY CHOOSE US
+=========================================== */
+
+.why-us{
+    padding:80px 8%;
+    background:#f5fff5;
+}
+
+.why-us h2{
+    text-align:center;
+    font-size:40px;
+    color:#1b5e20;
+    margin-bottom:50px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.why-grid div{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.why-grid div:hover{
+    transform:translateY(-8px);
+}
+
+.why-grid i{
+    font-size:55px;
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.why-grid h3{
+    margin-bottom:15px;
+    color:#1b5e20;
+}
+
+.why-grid p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ===========================================
+   CONTACT SECTION
+=========================================== */
+
+.contact{
+    padding:80px 8%;
+    text-align:center;
+    background:#ffffff;
+}
+
+.contact h2{
+    font-size:38px;
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+.contact p{
+    font-size:18px;
+    margin:10px 0;
+    color:#555;
+}
+
+.whatsapp{
+    display:inline-block;
+    margin-top:30px;
+    background:#25D366;
+    color:#fff;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    background:#128C7E;
+}
+
+.whatsapp i{
+    margin-right:10px;
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer{
+    background:#1b5e20;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    font-size:16px;
+}
+
+/* ===========================================
+   FLOATING WHATSAPP BUTTON
+=========================================== */
+
+.floating-whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:32px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    z-index:999;
+    transition:.3s;
+}
+
+.floating-whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+=========================================== */
+
+@media(max-width:992px){
+
+.products,
+.why-us,
+.contact{
+    padding:60px 25px;
+}
+
+.products h2,
+.why-us h2,
+.contact h2{
+    font-size:32px;
+}
+
+.product-card img{
+    width:180px;
+    height:180px;
+}
+
+}
+
+@media(max-width:600px){
+
+.products h2,
+.why-us h2,
+.contact h2{
+    font-size:28px;
+}
+
+.product-card{
+    padding:18px;
+}
+
+.product-card h3{
+    font-size:20px;
+}
+
+.product-card h4{
+    font-size:24px;
+}
+
+.product-card button{
+    font-size:15px;
+}
+
+.whatsapp{
+    width:100%;
+    padding:15px;
+}
+
+.floating-whatsapp{
+    width:58px;
+    height:58px;
+    font-size:28px;
+}
+
+}
+/* ==============================
+NOTIFICATION
+============================== */
+
+.notification{
+
+position:fixed;
+
+top:30px;
+
+right:-400px;
+
+background:#2e7d32;
+
+color:white;
+
+padding:18px 25px;
+
+border-radius:8px;
+
+font-size:16px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+transition:.5s;
+
+z-index:9999;
+
+}
+
+.notification.show{
+
+right:30px;
+
+}
+/* ===========================
+CART
+=========================== */
+
+#cart-container{
+
+width:90%;
+
+margin:40px auto;
+
+}
+
+.cart-card{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+background:white;
+
+padding:20px;
+
+margin-bottom:20px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.cart-card img{
+
+width:120px;
+
+height:120px;
+
+object-fit:contain;
+
+}
+
+.cart-details{
+
+flex:1;
+
+margin-left:30px;
+
+}
+
+.cart-details h2{
+
+color:#1b5e20;
+
+margin-bottom:10px;
+
+}
+
+.cart-details p{
+
+margin:6px 0;
+
+}
+
+#checkout-btn{
+
+background:#2e7d32;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+font-size:18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+#checkout-btn:hover{
+
+background:#1b5e20;
+
+}
+/* Quantity Buttons */
+
+.qty-box{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+margin:20px 0;
+
+}
+
+.qty-box button{
+
+width:40px;
+
+height:40px;
+
+border:none;
+
+background:#2e7d32;
+
+color:white;
+
+font-size:22px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+.qty-box span{
+
+font-size:20px;
+
+font-weight:bold;
+
+width:30px;
+
+text-align:center;
+
+}
+
+
+/* Remove Button */
+
+.remove-btn{
+
+background:#d32f2f;
+
+color:white;
+
+border:none;
+
+padding:12px 20px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+margin-top:15px;
+
+}
+
+.remove-btn:hover{
+
+background:#b71c1c;
+
+}
+/* ===========================
+CHECKOUT
+=========================== */
+
+.checkout-container{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+padding:50px;
+
+}
+
+.customer-form{
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.customer-form h2{
+
+margin-bottom:25px;
+
+color:#1b5e20;
+
+}
+
+.customer-form label{
+
+display:block;
+
+margin-top:18px;
+
+margin-bottom:6px;
+
+font-weight:600;
+
+}
+
+.customer-form input,
+.customer-form textarea{
+
+width:100%;
+
+padding:12px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+.checkout-btn{
+
+margin-top:30px;
+
+width:100%;
+
+background:#2e7d32;
+
+color:white;
+
+border:none;
+
+padding:16px;
+
+font-size:18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.checkout-btn:hover{
+
+background:#1b5e20;
+
+}
+
+.order-summary{
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+height:fit-content;
+
+}
+
+.checkout-item{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:15px 0;
+
+}
+
+.transport-note{
+
+margin-top:20px;
+
+background:#fff7e6;
+
+padding:12px;
+
+border-left:5px solid orange;
+
+}
+
+@media(max-width:900px){
+
+.checkout-container{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+}
+/* ===================================
+PAYMENT PAGE
+=================================== */
+
+.page-title{
+
+text-align:center;
+
+padding:30px;
+
+color:#1b5e20;
+
+}
+
+.payment-container{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+padding:50px;
+
+}
+
+.payment-methods,
+.payment-summary{
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.payment-methods h2,
+.payment-summary h2{
+
+margin-bottom:25px;
+
+color:#1b5e20;
+
+}
+
+.payment-option{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:18px;
+
+margin-bottom:18px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.payment-option:hover{
+
+background:#f5fff5;
+
+border-color:#2e7d32;
+
+}
+
+.payment-option input{
+
+transform:scale(1.2);
+
+}
+
+.payment-buttons{
+
+margin-top:30px;
+
+}
+
+.payment-buttons button{
+
+width:100%;
+
+background:#2e7d32;
+
+color:white;
+
+border:none;
+
+padding:16px;
+
+font-size:18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.payment-buttons button:hover{
+
+background:#1b5e20;
+
+}
+
+#upi-box{
+
+margin-top:25px;
+
+padding:20px;
+
+background:#f5fff5;
+
+border-left:5px solid green;
+
+}
+
+.hidden{
+
+display:none;
+
+}
+
+.payment-item{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:15px 0;
+
+}
+
+.delivery-note{
+
+margin-top:25px;
+
+background:#fff7e6;
+
+padding:12px;
+
+border-left:5px solid orange;
+
+}
+
+@media(max-width:900px){
+
+.payment-container{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+}
+/* ===================================
+ORDER CONFIRMATION
+=================================== */
+
+.confirmation{
+
+max-width:700px;
+
+margin:100px auto;
+
+padding:40px;
+
+background:white;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.confirmation h1{
+
+font-size:45px;
+
+color:#2e7d32;
+
+margin-bottom:20px;
+
+}
+
+.confirmation h2{
+
+margin-bottom:20px;
+
+}
+
+.confirmation p{
+
+margin:15px 0;
+
+font-size:18px;
+
+}
+/* =======================================
+ORDER CONFIRMATION
+======================================= */
+
+.confirmation-container{
+
+max-width:900px;
+
+margin:50px auto;
+
+background:white;
+
+padding:40px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.success-icon{
+
+font-size:70px;
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.confirmation-container h1,
+.confirmation-container h2{
+
+text-align:center;
+
+color:#1b5e20;
+
+margin-bottom:20px;
+
+}
+
+.order-info{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:15px;
+
+margin:30px 0;
+
+}
+
+#customer-details p{
+
+margin:10px 0;
+
+}
+
+.order-item{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:12px 0;
+
+padding:10px 0;
+
+border-bottom:1px solid #eee;
+
+}
+
+.confirmation-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+@media(max-width:768px){
+
+.confirmation-buttons{
+
+flex-direction:column;
+
+}
+
+}
+/* =======================================
+WHATSAPP BUTTON
+======================================= */
+
+.whatsapp-btn{
+
+background:#25D366;
+
+color:white;
+
+border:none;
+
+padding:14px 28px;
+
+font-size:16px;
+
+font-weight:600;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.whatsapp-btn:hover{
+
+background:#1DA851;
+
+}
