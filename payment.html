@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1 class="page-title">
+
+Payment
+
+</h1>
+
+</header>
+
+<div class="payment-container">
+
+<div class="payment-methods">
+
+<h2>Select Payment Method</h2>
+
+<label class="payment-option">
+
+<input
+type="radio"
+name="payment"
+value="COD"
+checked>
+
+<span>
+
+💵 Cash On Delivery
+
+</span>
+
+</label>
+
+<label class="payment-option">
+
+<input
+type="radio"
+name="payment"
+value="UPI">
+
+<span>
+
+📱 UPI Payment
+
+</span>
+
+</label>
+
+<label class="payment-option">
+
+<input
+type="radio"
+name="payment"
+value="RAZORPAY">
+
+<span>
+
+💳 Razorpay (Cards / UPI / Net Banking)
+
+</span>
+
+</label>
+
+<div id="upi-box" class="hidden">
+
+<h3>UPI ID</h3>
+
+<p>
+
+<b>8762476754@axl</b>
+
+</p>
+
+<p>
+
+Scan QR Code or pay using the above UPI ID.
+
+</p>
+
+</div>
+
+<div class="payment-buttons">
+
+<button id="pay-now-btn">
+
+Proceed
+
+</button>
+
+</div>
+
+</div>
+
+<div class="payment-summary">
+
+<h2>Order Summary</h2>
+
+<div id="payment-items"></div>
+
+<hr>
+
+<h2>
+
+Grand Total
+
+</h2>
+
+<h1>
+
+₹ <span id="payment-total">0</span>
+
+</h1>
+
+<p class="delivery-note">
+
+🚚 Transportation charges will be added based on delivery location.
+
+</p>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
